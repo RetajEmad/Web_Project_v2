@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+main{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+body{
+  margin: 0;
+}
+.banner{
+  flex: 1 0 100%;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#02213b9e);
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+.navbar{
+  width: 90%;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  
+  width: 60px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+.icon{
+  width: 20px;
+}
+.navbar li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgb(226, 226, 226);
+    font-weight: 600;
+}
+li a:hover{
+  color:white;
+  transition: 0.5s;
+}
+.cartitem{
+  display: flex;
+  gap: 150px;
+}
+.itemdetails p{
+  font-weight: 700;
+  font-size: 20px;
+  font-style: italic;
+}
+input{
+  background: gainsboro;
+  margin: 10px;
+  border: 10px;
+  outline: 10px;
+  padding: 18px;
+  color: black;
+  font-weight: 500;
+}
+label{
+  font-size: 20px;
+  font-weight: 800;
+  font-style: italic;
+  color: black;
+  text-transform: uppercase;
+}
+.cart p{
+  font-weight: 700;
+  font-size: 20px;
+  font-style: italic;
+  padding: 30px;
+}
+button{
+    background-color: #D94948;
+  border-color: #D94948;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  width: 160px;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+/* File: cart.css (Add these styles) */
+
+/* Standard button style */
+button{
+    background-color: #D94948;
+    /* ... existing styles ... */
+}
+
+/* Style for the specific remove button */
+.remove-button {
+    background-color: #D94948; /* Grey background */
+    border: 1px solid #777;
+    color: #333;
+    width: 120px; /* Make it a bit smaller */
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.remove-button:hover {
+    background-color: #D94948; /* Highlight red on hover */
+    color: white;
+    transition: 0.3s;
+}
+/* Ensure the existing button style is applied to the checkout button */
+#checkoutBtn {
+    background-color: #D94948; /* Explicitly ensure checkout button is red */
+}

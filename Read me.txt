@@ -1,0 +1,7 @@
+Read me
+
+How To Use this site?
+
+first of all you have to have a XAMPP server so you will search in the google url by (http://localhost/healthy-foods/)
+
+this will let you access all the project files on the local server then you will choose any page with the html file type and in the contact page you will find a form you can fill it and what you wrote in it will appear on the server where you can access from this url directly : (http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=healthyfoodsmachines_db&table=contact_messages )

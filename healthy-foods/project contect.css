@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+main{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.banner{
+    flex: 1 0 100%;
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(#02213b9e);
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+.navbar{
+  width: 90%;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width: 60px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+.icon{
+  width: 20px;
+}
+.navbar li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgb(226, 226, 226);
+    font-weight: 600;
+}
+li a:hover{
+  color:white;
+  transition: 0.5s;
+}
+.background{
+  flex: 1 0 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+  width: 500%;
+  height: 50vh;
+  background-image: url(contac.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.content{
+  text-align:center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+.title{
+  font-weight: 400;
+  font-size: 40px;
+}
+.bigbox{
+  display: flex;
+  gap: 400px;
+}
+.contbox{
+  display: flex;
+  gap: 50px;
+}
+.icons{
+  width: 50%;
+  height: auto;
+}
+.icons img{
+  display: flex;
+  width: 50px;
+  margin-bottom: 50px;
+}
+.text{
+  font-size: 30px;
+  font-weight: 400;
+  margin: 50px;
+  margin-top: 0px;
+  padding-bottom: 50px;
+}
+.login form{
+  width: 100%;
+  max-width: 450px;
+  position: absolute;
+  background-color: white;
+  padding: 50px ;
+  text-align: center;
+}
+.login h1{
+  font-size: 30px;
+  margin-bottom: 60px;
+  color:#D94948;
+  position: relative;
+}
+.login h1 ::after{
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #D94948;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+input{
+  background: gainsboro;
+  margin: 10px;
+  border: 10px;
+  outline: 10px;
+  padding: 18px;
+  color: black;
+  font-weight: 500;
+}
+label{
+  font-size: 20px;
+  font-weight: 800;
+  font-style: italic;
+  color: black;
+  text-transform: uppercase;
+}
+.login button{
+  background-color: #D94948;
+  border-color: #D94948;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  width: 160px;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+/* ... (Existing CSS) ... */
+
+/* Styles for inline client-side errors */
+.error-inline {
+    color: #D94948; /* Red/Error color */
+    font-size: 12px;
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Styles for global status messages (from AJAX) */
+.global-message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.global-message.error {
+    background-color: #ffe6e6;
+    border: 1px solid red;
+    color: red;
+}
+.global-message.success {
+    background-color: #e6ffe6;
+    border: 1px solid green;
+    color: green;
+}
